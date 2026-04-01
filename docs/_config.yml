@@ -1,11 +1,11 @@
 # Site settings
 title: "Audience Connect API Documentation"
 description: "Comprehensive API documentation for Audience Connect Reporting Service - Supply and Demand Partner APIs"
-baseurl: "/public-api-docs-ac"
-url: "https://smart-exchange-ai-digital.github.io"
+baseurl: ""
+url: "https://public-api-docs.audienceconnect.io"
 
 # Site branding
-logo: "/public-api-docs-ac/assets/ac_logo.png"
+logo: "/assets/ac_logo.png"
 brand_color: "#00f5ff"
 
 # Build settings

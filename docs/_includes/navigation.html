@@ -1,14 +1,14 @@
 <nav class="site-nav">
   <div class="nav-container">
     <a href="{{ '/' | relative_url }}" class="nav-logo">
-      <img src="https://smart-exchange-ai-digital.github.io/public-api-docs-ac/assets/ac_logo.png" 
+      <img src="{{ '/assets/ac_logo.png' | relative_url }}" 
            alt="Audience Connect Logo" 
            class="logo-image" 
            loading="eager"
            onerror="console.log('Logo failed to load:', this.src); this.style.border='2px solid red';"
            onload="console.log('Logo loaded successfully:', this.src);"
            crossorigin="anonymous">
-      <img src="https://smart-exchange-ai-digital.github.io/public-api-docs-ac/assets/ac_name.png" 
+      <img src="{{ '/assets/ac_name.png' | relative_url }}" 
            alt="Audience Connect API" 
            class="name-logo-image" 
            loading="eager"
