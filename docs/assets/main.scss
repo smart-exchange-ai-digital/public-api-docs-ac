@@ -1,6 +1,22 @@
 ---
 ---
 
+/* Audience Connect Cyan-to-Lime Color Scheme */
+:root {
+  --primary-cyan: #22d3ee;
+  --primary-lime: #84cc16;
+  --primary-teal: #06b6d4;
+  --primary-bright-lime: #a3e635;
+  --text-primary: #1e293b;
+  --text-secondary: #334155;
+  --text-muted: #475569;
+  --background-light: #f8fafc;
+  --background-white: #ffffff;
+  --border-color: #e2e8f0;
+  --gradient-primary: linear-gradient(135deg, #22d3ee 0%, #06b6d4 25%, #14b8a6 50%, #84cc16 75%, #a3e635 100%);
+  --gradient-header: linear-gradient(135deg, #22d3ee 0%, #84cc16 100%);
+}
+
 /* Basic reset and body styling */
 * {
   box-sizing: border-box;
@@ -11,8 +27,8 @@ body {
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f8f9fa;
+  color: var(--text-muted);
+  background-color: var(--background-light);
 }
 
 .wrapper {
