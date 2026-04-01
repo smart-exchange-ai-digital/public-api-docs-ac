@@ -5,13 +5,13 @@ permalink: /api-specification/
 nav_order: 2
 ---
 
-# **Smart Exchange Reporting Service API Specification**
+# **Audience Connect Reporting Service API Specification**
 
 ## **Overview**
 
-The Smart Exchange Reporting Service provides REST APIs for retrieving partner reporting data for both supply and demand partners. The service offers flexible querying capabilities with support for multiple output formats and comprehensive filtering options.
+The Audience Connect Reporting Service provides REST APIs for retrieving partner reporting data for both supply and demand partners. The service offers flexible querying capabilities with support for multiple output formats and comprehensive filtering options.
 
-**Base URL:** Login to Smart Exchange console or reach out to your contact in Smart Exchange
+**Base URL:** Login to Audience Connect console or reach out to your contact in Audience Connect
 
 **API Version:** v1
 
@@ -39,7 +39,7 @@ Retrieves supply partner reporting data with flexible filtering and output forma
 | Parameters | Data Type | Required | Description | Example |
 | :---- | :---- | :---- | :---- | :---- |
 | `api_key` | String | Yes | API Key | `AbCdEfGhIjKlMnOpQrStUvWxYz1234567890` |
-| `ssp_id` | String | Yes | Supply Partner ID in Smart Exchange Platform | `123456` |
+| `ssp_id` | String | Yes | Supply Partner ID in Audience Connect Platform | `123456` |
 | `start_date` | String | Yes | Start Date (ISO 8601: YYYY-MM-DD) | `2026-01-01` |
 | `end_date` | String | Yes | End Date (ISO 8601: YYYY-MM-DD) | `2026-01-31` |
 | `dimensions` | String | Yes | Comma-separated dimensions | `date,hour,site_id,bundle_domain` |
@@ -117,7 +117,7 @@ Retrieves demand partner reporting data with flexible filtering and output forma
 | Parameters | Data Type | Required | Description | Example |
 | :---- | :---- | :---- | :---- | :---- |
 | `api_key` | String | Yes | API Key | `AbCdEfGhIjKlMnOpQrStUvWxYz1234567890` |
-| `dsp_id` | String | Yes | Demand Partner ID in Smart Exchange Platform | `123` |
+| `dsp_id` | String | Yes | Demand Partner ID in Audience Connect Platform | `123` |
 | `start_date` | String | Yes | Start Date (ISO 8601: YYYY-MM-DD) | `2026-01-01` |
 | `end_date` | String | Yes | End Date (ISO 8601: YYYY-MM-DD) | `2026-01-31` |
 | `dimensions` | String | Yes | Comma-separated dimensions | `date,hour,endpoint_id,bundle_domain` |
@@ -302,14 +302,14 @@ The API uses API Key authentication for partner access. Each partner (Supply or 
 <footer class="documentation-footer">
   <div class="footer-content">
     <p style="color: #ffffff !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important; font-weight: bold !important; background-color: rgba(0,0,0,0.3) !important; padding: 8px 12px !important; border-radius: 6px !important; display: inline-block !important;">
-      <strong style="color: #ffffff !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.9) !important;">Questions or Issues?</strong> Please contact our API support team or <a href="https://github.com/smart-exchange-ai-digital/public-api-docs/issues" target="_blank" style="color: #ffffff !important; text-decoration: underline !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;">create an issue on GitHub</a>.
+      <strong style="color: #ffffff !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.9) !important;">Questions or Issues?</strong> Please contact our API support team or <a href="https://github.com/smart-exchange-ai-digital/public-api-docs-ac/issues" target="_blank" style="color: #ffffff !important; text-decoration: underline !important; text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;">create an issue on GitHub</a>.
     </p>
     <div class="footer-license">
       <hr>
       <p>&copy; 2026 AI Digital. All rights reserved.</p>
       <p>This documentation is proprietary and subject to the terms of your Partner Agreement. 
-      <a href="https://github.com/smart-exchange-ai-digital/public-api-docs/blob/main/LICENSE" target="_blank">View license terms</a> | 
-      <a href="https://github.com/smart-exchange-ai-digital/public-api-docs" target="_blank">GitHub Repository</a></p>
+      <a href="https://github.com/smart-exchange-ai-digital/public-api-docs-ac/blob/main/LICENSE" target="_blank">View license terms</a> | 
+      <a href="https://github.com/smart-exchange-ai-digital/public-api-docs-ac" target="_blank">GitHub Repository</a></p>
     </div>
   </div>
 </footer>
