@@ -1,20 +1,20 @@
 ---
 ---
 
-/* Audience Connect Cyan-to-Radium Color Scheme */
+/* Audience Connect Muted Cyan-to-Lime Color Scheme */
 :root {
-  --primary-cyan: #00f5ff;
-  --primary-lime: #00ff00;
-  --primary-teal: #00e5ff;
-  --primary-radium: #80ff80;
+  --primary-cyan: #0891b2;
+  --primary-lime: #65a30d;
+  --primary-teal: #0e7490;
+  --primary-radium: #4d7c0f;
   --text-primary: #1e293b;
   --text-secondary: #334155;
   --text-muted: #475569;
   --background-light: #f8fafc;
   --background-white: #ffffff;
   --border-color: #e2e8f0;
-  --gradient-primary: linear-gradient(135deg, #00f5ff 0%, #00e5ff 25%, #00ffaa 50%, #40ff40 75%, #80ff80 100%);
-  --gradient-header: linear-gradient(135deg, #00f5ff 0%, #80ff80 100%);
+  --gradient-primary: linear-gradient(135deg, #0891b2 0%, #0e7490 25%, #059669 50%, #65a30d 75%, #4d7c0f 100%);
+  --gradient-header: linear-gradient(135deg, #0891b2 0%, #4d7c0f 100%);
 }
 
 /* Basic reset and body styling */

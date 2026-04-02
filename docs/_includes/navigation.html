@@ -32,11 +32,11 @@
 
 <style>
 .site-nav {
-  background: linear-gradient(135deg, #00f5ff 0%, #00e5ff 25%, #00ffaa 50%, #40ff40 75%, #80ff80 100%);
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 25%, #059669 50%, #65a30d 75%, #4d7c0f 100%);
   color: white;
   padding: 15px 0;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -59,6 +59,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-logo strong {
@@ -78,7 +80,6 @@
   height: 32px !important;
   width: auto !important;
   transition: all 0.3s ease;
-  background: white !important;
   padding: 2px !important;
   border-radius: 4px !important;
   display: block !important;
@@ -86,13 +87,14 @@
   opacity: 1 !important;
   max-width: none !important;
   min-height: 32px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  filter: brightness(1.1);
 }
 
 .name-logo-image {
   height: 32px !important;
   width: auto !important;
   transition: all 0.3s ease;
-  background: white !important;
   padding: 2px !important;
   border-radius: 4px !important;
   display: block !important;
@@ -100,6 +102,8 @@
   opacity: 1 !important;
   max-width: none !important;
   min-height: 32px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  filter: brightness(1.1);
 }
 
 .nav-logo:hover .logo-image {
