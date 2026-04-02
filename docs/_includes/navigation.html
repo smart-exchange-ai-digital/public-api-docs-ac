@@ -1,15 +1,15 @@
 <nav class="site-nav">
   <div class="nav-container">
     <a href="{{ '/' | relative_url }}" class="nav-logo">
-      <img src="https://smart-exchange-ai-digital.github.io/public-api-docs/assets/icon.png" 
-           alt="Smart Exchange Logo" 
+      <img src="{{ '/assets/ac_logo.png' | relative_url }}" 
+           alt="Audience Connect Logo" 
            class="logo-image" 
            loading="eager"
            onerror="console.log('Logo failed to load:', this.src); this.style.border='2px solid red';"
            onload="console.log('Logo loaded successfully:', this.src);"
            crossorigin="anonymous">
-      <img src="https://smart-exchange-ai-digital.github.io/public-api-docs/assets/nameicon.png" 
-           alt="Smart Exchange API" 
+      <img src="{{ '/assets/ac_name.png' | relative_url }}" 
+           alt="Audience Connect API" 
            class="name-logo-image" 
            loading="eager"
            onerror="console.log('Name Logo failed to load:', this.src); this.style.border='2px solid red';"
@@ -23,7 +23,7 @@
       <a href="{{ '/api-specification/' | relative_url }}" class="nav-link {% if page.url contains 'api-specification' %}active{% endif %}">
         📖 API Documentation
       </a>
-      <a href="https://github.com/smart-exchange-ai-digital/public-api-docs" class="nav-link external" target="_blank">
+      <a href="https://github.com/smart-exchange-ai-digital/public-api-docs-ac" class="nav-link external" target="_blank">
         💻 GitHub
       </a>
     </div>
@@ -32,11 +32,11 @@
 
 <style>
 .site-nav {
-  background: linear-gradient(135deg, #1e3a8a 0%, #1e1b4b 100%);
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 25%, #059669 50%, #65a30d 75%, #4d7c0f 100%);
   color: white;
   padding: 15px 0;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -59,6 +59,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-logo strong {
@@ -78,28 +80,26 @@
   height: 32px !important;
   width: auto !important;
   transition: all 0.3s ease;
-  background: white !important;
   padding: 2px !important;
-  border-radius: 4px !important;
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
   max-width: none !important;
   min-height: 32px !important;
+  filter: brightness(1.1);
 }
 
 .name-logo-image {
   height: 32px !important;
   width: auto !important;
   transition: all 0.3s ease;
-  background: white !important;
   padding: 2px !important;
-  border-radius: 4px !important;
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
   max-width: none !important;
   min-height: 32px !important;
+  filter: brightness(1.1);
 }
 
 .nav-logo:hover .logo-image {
